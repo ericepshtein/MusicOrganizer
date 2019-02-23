@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.eric.musicorganizer" >
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <!-- enable the search dialog to send searches to SearchableActivity -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".search.SearchableActivity" />
+        <service
+            android:name=".mediaPlayer.MusicService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".activityPages.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityPages.SongsPage"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/songs_page" >
+        </activity>
+        <activity
+            android:name=".activityPages.AllAlbumsPage"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/albums_page" />
+        <activity
+            android:name=".activityPages.AlbumPage"
+            android:parentActivityName=".activityPages.AllAlbumsPage"
+            android:screenOrientation="portrait"
+            android:label="@string/albums_page" />
+        <activity
+            android:name=".activityPages.AllArtistsPage"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/artists_page" />
+        <activity
+            android:name=".activityPages.ArtistPage"
+            android:parentActivityName=".activityPages.AllArtistsPage"
+            android:screenOrientation="portrait"
+            android:label="@string/artists_page" />
+        <activity
+            android:name=".activityPages.AlbumsByGenrePage"
+            android:parentActivityName=".activityPages.AllGenresPage"
+            android:screenOrientation="portrait"
+            android:label="@string/genres_page" />
+        <activity
+            android:name=".activityPages.ArtistsByGenrePage"
+            android:parentActivityName=".activityPages.AllGenresPage"
+            android:screenOrientation="portrait"
+            android:label="@string/genres_page" />
+        <activity
+            android:name=".activityPages.SongsByGenrePage"
+            android:parentActivityName=".activityPages.AllGenresPage"
+            android:screenOrientation="portrait"
+            android:label="@string/genres_page" />
+        <activity
+            android:name=".activityPages.SongsByArtistPage"
+            android:parentActivityName=".activityPages.ArtistPage"
+            android:screenOrientation="portrait"
+            android:label="@string/songs_page" />
+        <activity
+            android:name=".activityPages.ComposersPage"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/composers_page" />
+        <activity
+            android:name=".activityPages.AllGenresPage"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/genres_page" />
+        <activity
+            android:name=".mediaPlayer.PlayerPage"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/player" />
+        <activity android:name=".settings.SettingsPageActivity"
+            android:parentActivityName=".activityPages.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/settings_page" />
+        <activity
+            android:name=".search.SearchableActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+    </application>
+</manifest>
