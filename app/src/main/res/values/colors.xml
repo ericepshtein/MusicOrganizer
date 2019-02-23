@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dedede</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#232323</color>
+    <color name="colorDark">#bdbdbd</color>
+
+    <color name="separator">#434343</color>
+    <color name="black">#000000</color>
+    <color name="songTitle">#000000</color>
+    <color name="songArtist">#434343</color>
+    <color name="titleElement">#565656</color>
+    <color name="MainActivityBackground">#cdcdcd</color>
+    <color name="albumSongElement">#ededed</color>
+    <color name="listTitle">#232323</color>
+    <color name="playerTitle">#cdcdcd</color>
+    <color name="searchField">#ffffff</color>
+    <color name="song_track_layout_color">#80333333</color>
+    <color name="song_track_text_color">#cdcdcd</color>
+</resources>

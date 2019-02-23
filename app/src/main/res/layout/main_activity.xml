@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/listgrad"
+    tools:context="com.example.eric.musicorganizer.activityPages.MainActivity">
+
+    <Button
+        android:id="@+id/song_page_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-Bold"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/songs_page"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/artists_page_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:fontFamily="sans-serif-Bold"
+        android:layout_weight="1"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/artists_page"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/albums_page_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-Bold"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/albums_page"
+        android:textSize="16sp" />
+
+    <!--Button
+        android:id="@+id/composers_page_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-Bold"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/composers_page"
+        android:textSize="16sp" /-->
+
+    <Button
+        android:id="@+id/genres_page_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-Bold"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/genres_page"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/settings_page_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-Bold"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/settings_page"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/current_song"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-Bold"
+        android:onClick="onOptionsPageSelected"
+        android:text="@string/current_song"
+        android:textSize="16sp" />
+
+</LinearLayout>

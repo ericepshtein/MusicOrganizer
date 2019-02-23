@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/listgrad"
+    tools:context=".activityPages.AlbumPage">
+
+    <LinearLayout
+        android:id="@+id/album_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listgrad"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/album_art"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true"
+            android:padding="10sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/album_artist_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:onClick="displayAllArtists"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/album_page_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/album_year_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/album_song_counter_and_length_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/album_genres_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:onClick="displayAllGenres"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MainActivityBackground"
+        android:layout_marginTop="1dp"
+        android:id="@+id/albums_songs_layout">
+
+        <ListView
+            android:id="@+id/songs_in_album_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/albumSongElement"
+            android:fastScrollAlwaysVisible="false" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

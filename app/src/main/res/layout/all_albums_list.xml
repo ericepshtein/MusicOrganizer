@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@color/MainActivityBackground">
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:padding="1sp"
+        android:layout_marginTop="5sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <LinearLayout
+        android:id="@id/album_art"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:textAlignment="gravity"
+            android:paddingLeft="5dp"
+            android:textColor="@color/listTitle"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/album_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="5dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/songArtist"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/album_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingStart="5dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/songArtist"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

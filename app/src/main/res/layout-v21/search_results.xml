@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MainActivityBackground" >
+
+    <TextView
+        android:id="@+id/no_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/no_results"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/songs_results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/songs_results_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="songResultsSelected"
+            android:text="@string/songsResults"
+            android:textStyle="bold"
+            android:textSize="19sp" />
+
+        <ListView
+            android:id="@+id/songs_results_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/MainActivityBackground">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/albums_results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/albums_results_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="albumResultsSelected"
+            android:text="@string/albumsResults"
+            android:textStyle="bold"
+            android:textSize="19sp" />
+
+        <ListView
+            android:id="@+id/albums_results_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/MainActivityBackground">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/artists_results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/artists_results_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="artistResultsSelected"
+            android:text="@string/artistsResults"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:translationZ="1dp"/>
+
+        <ListView
+            android:id="@+id/artists_results_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/MainActivityBackground" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/genre_results_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/genre_results_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="genreResultsSelected"
+            android:text="@string/genreResults"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:translationZ="1dp"/>
+
+        <ListView
+            android:id="@+id/genre_results_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/MainActivityBackground" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Music Organizer</string>
+
+    <!-- name of the pages in the app -->
+    <string name="songs_page">Songs</string>
+    <string name="albums_page">Albums</string>
+    <string name="artists_page">Artists</string>
+    <string name="composers_page">Composers</string>
+    <string name="genres_page">Genres</string>
+    <string name="settings_page">Settings</string>
+    <string name="player">player</string>
+    <string name="current_song">Player</string>
+
+    <!-- Messages -->
+    <string name="no_songs">There are no songs to be displayed</string>
+    <string name="no_artists">There are no artist to be displayed</string>
+    <string name="no_albums">There are no albums to be displayed</string>
+    <string name="no_composers">There are no composers to be displayed</string>
+    <string name="no_genres">There are no genres to be displayed</string>
+    <string name="general_error">Some error has been occurred</string>
+
+    <string name="AllAlbumArtistsTitle">All album artists:</string>
+    <string name="AllAlbumGenresTitle">All album genres:</string>
+
+
+    <!-- Keys -->
+    <string name="ArtistNameKey">ARTIST_NAME</string>
+    <string name="AlbumTitleKey">ALBUM_TITLE</string>
+    <string name="AlbumArtistKey">ALBUM_ARTIST</string>
+    <string name="ComposerNameKey">ARTIST_NAME</string>
+    <string name="GenreNameKey">GENRE_NAME</string>
+    <string name="SongIdKey">SONG_ID</string>
+
+    <!-- Settings -->
+    <string name="groupByAlbumArtist">Group By Album Artist</string>
+    <string name="displaySettings">Display Settings</string>
+    <string name="allSongsPage">Songs Display Settings</string>
+    <string name="allAlbumsPage">Albums Display Settings</string>
+    <string name="allArtistsPage">Artists Display Settings</string>
+    <string name="allComposersPage">Composers Display Settings</string>
+    <string name="allGenresPage">Genres Display Settings</string>
+    <string name="orderAllSongsBy">Order Songs By</string>
+    <string name="sortAllSongsBy">Sort Songs By</string>
+    <string name="sortAlbumsBy">Sort Albums By</string>
+    <string name="orderAlbumsBy">Order Albums By</string>
+    <string name="orderArtistsBy">Order Artists By</string>
+    <string name="resetAllSettings">Reset to Factory Defaults</string>
+    <string name="resetAllSettingsExplanation">Resetting the default settings will <b>remove all of your custom settings irreversibly</b>."</string>
+
+    <!-- Search -->
+    <string name="search_label">SearchService</string>
+    <string name="search_hint">search</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="no_results">No Library Results</string>
+
+    <string name="songsResults">Songs:</string>
+    <string name="albumsResults">Albums:</string>
+
+    <string name="not_implemented_yet"><b>NOT IMPLEMENTED YET!!!</b></string>
+    <string name="album_art">Album Art</string>
+    <string name="resumeMusicPlaying">Resume Music Playing After Interruption</string>
+    <string name="artistsResults">Artists:</string>
+    <string name="all_songs">All Songs</string>
+    <string name="all_albums">All Albums</string>
+
+    <string name="genreResults">Genres:</string>
+
+
+    <string-array name="sortSettingsItems">
+        <item>Title</item>
+        <item>Year</item>
+    </string-array>
+
+    <string-array name="orderSettingsItems">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+</resources>
